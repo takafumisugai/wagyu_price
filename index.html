@@ -27,6 +27,9 @@
     </ul>
   </nav>
   <main class="container-fluid content-width result">
+    <div id="page-top">
+      <a href="#" class="scrollTopBtn"></a>
+    </div>
     <div class="card-deck row">
       <a href="#" class="card">
         <img class="card-img-top" src="img/ph_beaf.jpg">
@@ -234,6 +237,14 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    var topButton = $('.scrollTopBtn');
+          topButton.click(function() {
+          $('body, html').animate({
+            scrollTop: 0
+          }, 500);
+        });
+  </script>
 </body>
 
 </html>
